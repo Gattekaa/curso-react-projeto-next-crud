@@ -1,4 +1,4 @@
-//import Titulo from './Titulo'
+import Titulo from './Titulo'
 
 interface LayoutProps {
     titulo: string
@@ -11,7 +11,7 @@ export default function Layout(props: LayoutProps) {
             flex flex-col w-2/3
             bg-white text-gray-800 rounded-md
         `}>
-            {/*<Titulo></Titulo>*/}
+            <Titulo>{props.titulo}</Titulo>
             <div className="p-6">
                 {props.children}
             </div>
